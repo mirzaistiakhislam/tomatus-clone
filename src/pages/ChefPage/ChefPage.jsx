@@ -1,5 +1,5 @@
 
-import { BiLogoLinkedin, BiSolidDashboard } from "react-icons/bi";
+import { BiLogoLinkedin } from "react-icons/bi";
 import { BiLogoFacebook } from "react-icons/bi";
 import { AiOutlineGooglePlus, AiOutlineTwitter } from "react-icons/ai";
 import NavBar from "../../components/NavBar/NavBar";
@@ -55,7 +55,7 @@ const ChefPage = () => {
                     </ul>
 
                     <footer className="absolute bottom-0 w-full p-4 bg-base-100">
-                        <div className="flex justify-center gap-2 text-sm">
+                        <div className="flex justify-center gap-2 text-sm mb-2">
                             <BiLogoFacebook color="#3A5896" />
                             <AiOutlineTwitter color="#1E91D8" />
                             <BiLogoLinkedin color="#165B7A" />

@@ -38,7 +38,7 @@ const Team = () => {
             id: 5,
             name: 'Lurch Schpellchek',
             title: 'Chef',
-            specialDish: 'Crispy Chicken Salt',
+            specialDish: 'Crispy Chicken',
             image: 'https://img.freepik.com/free-photo/portrait-smiling-chef-uniform_329181-675.jpg?w=900&t=st=1699381557~exp=1699382157~hmac=4ee60aeb4d45ca8c64963c80878f61db2c6d196535d0caee15236f0df9649122'
         },
         {
@@ -87,13 +87,13 @@ const Team = () => {
             id: 12,
             name: 'Fergus Douchebag',
             title: 'Chef',
-            specialDish: 'Crispy Chicken Salt',
+            specialDish: 'Crispy Chicken',
             image: 'https://img.freepik.com/free-photo/female-chef-holding-wooden-spoon-whisk-rolling-pin-white-uniform-looking-cheery_176474-12639.jpg?w=900&t=st=1699383219~exp=1699383819~hmac=3e02a1c06ab14a4609aa244eee51d1178e31b9698c55e2fb133319c9063e731e'
         }
     ]
 
     return (
-        <div className="grid grid-cols-5 gap-2 mx-6">
+        <div className="grid grid-cols-5 gap-2 mx-6 mb-20">
             <div>
                 <div className="bg-base-100 mx-auto pb-7">
                     <div className="avatar ml-10 w-24 h-24 mt-5 border-2 border-dotted rounded-full">

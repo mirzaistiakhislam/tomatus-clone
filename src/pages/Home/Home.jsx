@@ -71,7 +71,7 @@ const Home = () => {
                     </ul>
 
                     <footer className="absolute bottom-0 w-full p-4 bg-base-100">
-                        <div className="flex justify-center gap-2 text-sm">
+                        <div className="flex justify-center gap-2 text-sm mb-2">
                             <BiLogoFacebook color="#3A5896" />
                             <AiOutlineTwitter color="#1E91D8" />
                             <BiLogoLinkedin color="#165B7A" />
