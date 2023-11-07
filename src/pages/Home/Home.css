@@ -1,0 +1,16 @@
+.menu ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.menu ul li {
+    border-top: none;
+}
+
+.menu li {
+    border-bottom-width: 0;
+}
+
+.menu ul li {
+    border: none;
+}
