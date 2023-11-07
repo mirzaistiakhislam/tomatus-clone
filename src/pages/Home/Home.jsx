@@ -1,5 +1,5 @@
 import NavBar from "../../components/NavBar/NavBar";
-import { BiSolidDashboard } from "react-icons/bi";
+import { BiLogoLinkedin, BiSolidDashboard } from "react-icons/bi";
 import './Home.css';
 import Nav from "../../components/Nav/Nav";
 import Prize from "../../components/Prize/Prize";
@@ -8,6 +8,8 @@ import Statistic from "../../components/Statistic/Statistic";
 import CustomerFeed from "../../components/CustomerFeed/CustomerFeed";
 import ReceiveOrderLists from "../../components/ReceiveOrderLists/ReceiveOrderLists";
 import HotFoodMenu from "../../components/HotFoodMenu/HotFoodMenu";
+import { BiLogoFacebook } from "react-icons/bi";
+import { AiOutlineGooglePlus, AiOutlineTwitter } from "react-icons/ai";
 
 const Home = () => {
     return (
@@ -67,6 +69,15 @@ const Home = () => {
                         </div>
                     </ul>
 
+                    <footer className="absolute bottom-0 w-full p-4 bg-base-100">
+                        <div className="flex justify-center gap-2">
+                            <BiLogoFacebook color="#3A5896" />
+                            <AiOutlineTwitter color="#1E91D8" />
+                            <BiLogoLinkedin color="#165B7A" />
+                            <AiOutlineGooglePlus color="#D54432" />
+                        </div>
+                        <p className="text-center text-xs font-bold">&copy; 2023 <span className="text-red-500">Tomatus</span>. All Right Reserved</p>
+                    </footer>
                 </div>
             </div>
         </div>
