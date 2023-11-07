@@ -10,6 +10,7 @@ import ReceiveOrderLists from "../../components/ReceiveOrderLists/ReceiveOrderLi
 import HotFoodMenu from "../../components/HotFoodMenu/HotFoodMenu";
 import { BiLogoFacebook } from "react-icons/bi";
 import { AiOutlineGooglePlus, AiOutlineTwitter } from "react-icons/ai";
+import { Link } from "react-router-dom";
 
 const Home = () => {
     return (
@@ -19,7 +20,7 @@ const Home = () => {
                 <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
                 <div className="drawer-content">
                     {/* Page content here */}
-                    <Nav></Nav>
+                    <Nav home='FOOD' food='Food'></Nav>
                     <div className="grid grid-cols-12 gap-4">
                         <div className="col-span-5">
                             <Prize></Prize>
@@ -51,11 +52,11 @@ const Home = () => {
                         <div className="font-semibold ml-2">
                             <li className="bg-base-200 border-2 border-y-0 border-r-0 border-l-red-500"><a> <BiSolidDashboard size={20} /> <span className="text-red-500">Dashboard</span></a></li>
                             <div className="ml-7">
-                                <li><a>Menu Layout</a></li>
-                                <li><a>Order List</a></li>
-                                <li><a>Chef Page</a></li>
-                                <li><a>Customer Reviews</a></li>
-                                <li><a>Upload Menu</a></li>
+                                <li><Link>Menu Layout</Link></li>
+                                <li><Link>Order List</Link></li>
+                                <li><Link to='/chef-page'>Chef Page</Link></li>
+                                <li><Link>Customer Reviews</Link></li>
+                                <li><Link>Upload Menu</Link></li>
                             </div>
                         </div>
                         <h2 className="menu-title uppercase text-red-500">Authentication Pages</h2>
@@ -70,7 +71,7 @@ const Home = () => {
                     </ul>
 
                     <footer className="absolute bottom-0 w-full p-4 bg-base-100">
-                        <div className="flex justify-center gap-2">
+                        <div className="flex justify-center gap-2 text-sm">
                             <BiLogoFacebook color="#3A5896" />
                             <AiOutlineTwitter color="#1E91D8" />
                             <BiLogoLinkedin color="#165B7A" />
