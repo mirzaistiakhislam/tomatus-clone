@@ -6,6 +6,7 @@ import Prize from "../../components/Prize/Prize";
 import EarningGraph from "../../components/EarningGraph/EarningGraph";
 import Statistic from "../../components/Statistic/Statistic";
 import CustomerFeed from "../../components/CustomerFeed/CustomerFeed";
+import ReceiveOrderLists from "../../components/ReceiveOrderLists/ReceiveOrderLists";
 
 const Home = () => {
     return (
@@ -28,6 +29,9 @@ const Home = () => {
                         </div>
                         <div className="col-span-7">
                             <CustomerFeed></CustomerFeed>
+                        </div>
+                        <div className="col-span-8">
+                            <ReceiveOrderLists></ReceiveOrderLists>
                         </div>
                     </div>
                     <label htmlFor="my-drawer-2" className="btn btn-primary drawer-button lg:hidden">Open drawer</label>
