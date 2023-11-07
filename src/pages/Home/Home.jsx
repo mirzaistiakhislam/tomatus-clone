@@ -15,10 +15,10 @@ const Home = () => {
                     {/* Page content here */}
                     <Nav></Nav>
                     <div className="grid grid-cols-12 gap-4">
-                        <div className="col-span-4">
+                        <div className="col-span-5">
                             <Prize></Prize>
                         </div>
-                        <div className="col-span-5">
+                        <div className="col-span-7">
                             <EarningGraph></EarningGraph>
                         </div>
                     </div>
