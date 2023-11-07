@@ -4,6 +4,7 @@ import './Home.css';
 import Nav from "../../components/Nav/Nav";
 import Prize from "../../components/Prize/Prize";
 import EarningGraph from "../../components/EarningGraph/EarningGraph";
+import Statistic from "../../components/Statistic/Statistic";
 
 const Home = () => {
     return (
@@ -20,6 +21,9 @@ const Home = () => {
                         </div>
                         <div className="col-span-7">
                             <EarningGraph></EarningGraph>
+                        </div>
+                        <div className="col-span-5">
+                            <Statistic></Statistic>
                         </div>
                     </div>
                     <label htmlFor="my-drawer-2" className="btn btn-primary drawer-button lg:hidden">Open drawer</label>
