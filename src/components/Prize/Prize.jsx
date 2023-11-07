@@ -2,7 +2,7 @@ import prize from '../../assets/prize.png';
 
 const Prize = () => {
     return (
-        <div className="bg-base-100 border ml-6">
+        <div className="bg-base-100 ml-6">
             <div className="w-full bg-base-100 py-10 px-4">
                 <figure className="mx-auto h-12 w-16">
                     <img src={prize} alt="" className="rounded-xl h-12 w-16" />

@@ -13,7 +13,7 @@ const data = [
 
 const EarningGraph = () => {
     return (
-        <div className='border bg-base-100 col-span-5 pt-10 px-6 pb-6 mr-6 relative text-white'>
+        <div className='bg-base-100 col-span-5 pt-10 px-6 pb-6 mr-6 relative text-white'>
             <div className='absolute text-sm font-bold top-6'>Earning Graph</div>
             <AreaChart
                 width={480}

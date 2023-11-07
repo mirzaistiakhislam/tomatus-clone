@@ -7,10 +7,11 @@ import EarningGraph from "../../components/EarningGraph/EarningGraph";
 import Statistic from "../../components/Statistic/Statistic";
 import CustomerFeed from "../../components/CustomerFeed/CustomerFeed";
 import ReceiveOrderLists from "../../components/ReceiveOrderLists/ReceiveOrderLists";
+import HotFoodMenu from "../../components/HotFoodMenu/HotFoodMenu";
 
 const Home = () => {
     return (
-        <div className="bg-base-200 border">
+        <div className="bg-base-200">
             <NavBar></NavBar>
             <div className="drawer lg:drawer-open">
                 <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
@@ -33,6 +34,9 @@ const Home = () => {
                         <div className="col-span-8">
                             <ReceiveOrderLists></ReceiveOrderLists>
                         </div>
+                        <div className="col-span-4">
+                            <HotFoodMenu></HotFoodMenu>
+                        </div>
                     </div>
                     <label htmlFor="my-drawer-2" className="btn btn-primary drawer-button lg:hidden">Open drawer</label>
 
@@ -42,29 +46,25 @@ const Home = () => {
                     <ul className="menu p-4 w-[282px] min-h-full text-base-content list-none">
                         {/* Sidebar content here */}
                         <h2 className="menu-title uppercase text-red-500">Main</h2>
-                        <li className="font-semibold">
-                            <ul className="">
-                                <li className="bg-base-200 border-2 border-y-0 border-r-0 border-l-red-500"><a> <BiSolidDashboard size={20} /> <span className="text-red-500">Dashboard</span></a></li>
-                                <div className="ml-7">
-                                    <li><a>Menu Layout</a></li>
-                                    <li><a>Order List</a></li>
-                                    <li><a>Chef Page</a></li>
-                                    <li><a>Customer Reviews</a></li>
-                                    <li><a>Upload Menu</a></li>
-                                </div>
-                            </ul>
-                        </li>
+                        <div className="font-semibold ml-2">
+                            <li className="bg-base-200 border-2 border-y-0 border-r-0 border-l-red-500"><a> <BiSolidDashboard size={20} /> <span className="text-red-500">Dashboard</span></a></li>
+                            <div className="ml-7">
+                                <li><a>Menu Layout</a></li>
+                                <li><a>Order List</a></li>
+                                <li><a>Chef Page</a></li>
+                                <li><a>Customer Reviews</a></li>
+                                <li><a>Upload Menu</a></li>
+                            </div>
+                        </div>
                         <h2 className="menu-title uppercase text-red-500">Authentication Pages</h2>
-                        <li className="font-semibold">
-                            <ul className="">
-                                <div className="ml-7">
-                                    <li><a>Login</a></li>
-                                    <li><a>Register Now</a></li>
-                                    <li><a>Lock Screen</a></li>
-                                    <li><a>Recover Password</a></li>
-                                </div>
-                            </ul>
-                        </li>
+                        <div className="font-semibold ml-2">
+                            <div className="ml-7">
+                                <li><a>Login</a></li>
+                                <li><a>Register Now</a></li>
+                                <li><a>Lock Screen</a></li>
+                                <li><a>Recover Password</a></li>
+                            </div>
+                        </div>
                     </ul>
 
                 </div>
