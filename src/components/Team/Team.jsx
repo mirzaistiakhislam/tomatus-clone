@@ -93,11 +93,11 @@ const Team = () => {
     ]
 
     return (
-        <div className="grid grid-cols-5 gap-2 mx-6 mb-20">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-2 mx-6 mb-20">
             <div>
-                <div className="bg-base-100 mx-auto pb-7">
-                    <div className="avatar ml-10 w-24 h-24 mt-5 border-2 border-dotted rounded-full">
-                        < ImUserPlus size={60} className="mx-auto my-auto" />
+                <div className="bg-base-100 mx-auto pt-6 pb-7">
+                    <div className="mx-auto w-24 h-24 border-2 border-dotted rounded-full">
+                        < ImUserPlus size={60} className="mx-auto mt-4" />
                     </div>
                     <div className="items-center text-center">
                         <h2 className="text-sm text-white font-semibold my-2">Invite New Chef</h2>
@@ -110,13 +110,13 @@ const Team = () => {
             </div>
             {
                 teamMembers.map(teamMember => <div key={teamMember.id}>
-                    <div className="bg-base-100 mx-auto relative pb-10">
+                    <div className="bg-base-100 mx-auto relative pt-6 pb-10">
                         <div className="absolute top-2 right-2">
                             <HiEllipsisVertical size={20} />
                         </div>
-                        <div className="avatar ml-10 mt-5">
-                            <div className="w-24 h-24 rounded-full">
-                                <img src={teamMember.image} className="mx-auto" alt="" />
+                        <div className="mx-auto w-24 h-24 rounded-full mb-1">
+                            <div className=" rounded-full">
+                                <img src={teamMember.image} className="w-24 h-24 rounded-full object-cover" alt="" />
                             </div>
                         </div>
                         <div className="items-center text-center">

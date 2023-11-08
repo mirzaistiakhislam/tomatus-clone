@@ -49,22 +49,22 @@ const Home = () => {
                         {/* Sidebar content here */}
                         <h2 className="menu-title uppercase text-red-500">Main</h2>
                         <div className="font-semibold ml-2">
-                            <li className="bg-base-200 border-2 border-y-0 border-r-0 border-l-red-500 mb-2"><a> <BiSolidDashboard size={20} /> <span className="text-red-500">Dashboard</span></a></li>
+                            <li className="bg-base-200 border-2 border-y-0 border-r-0 border-l-red-500 md:mb-2"><a> <BiSolidDashboard size={20} /> <span className="text-red-500">Dashboard</span></a></li>
                             <div className="ml-7">
-                                <li className="mb-2"><Link>Menu Layout</Link></li>
-                                <li className="mb-2"><Link>Order List</Link></li>
-                                <li className="mb-2"><Link to='/chef-page'>Chef Page</Link></li>
-                                <li className="mb-2"><Link>Customer Reviews</Link></li>
-                                <li className="mb-2"><Link>Upload Menu</Link></li>
+                                <li className="md:mb-2"><Link>Menu Layout</Link></li>
+                                <li className="md:mb-2"><Link>Order List</Link></li>
+                                <li className="md:mb-2"><Link to='/chef-page'>Chef Page</Link></li>
+                                <li className="md:mb-2"><Link>Customer Reviews</Link></li>
+                                <li className="md:mb-2"><Link>Upload Menu</Link></li>
                             </div>
                         </div>
                         <h2 className="menu-title uppercase text-red-500">Authentication Pages</h2>
                         <div className="font-semibold ml-2">
                             <div className="ml-7">
-                                <li className="mb-2"><a>Login</a></li>
-                                <li className="mb-2"><a>Register Now</a></li>
-                                <li className="mb-2"><a>Lock Screen</a></li>
-                                <li className="mb-2"><a>Recover Password</a></li>
+                                <li className="md:mb-2"><a>Login</a></li>
+                                <li className="md:mb-2"><a>Register Now</a></li>
+                                <li className="md:mb-2"><a>Lock Screen</a></li>
+                                <li className="md:mb-2"><a>Recover Password</a></li>
                             </div>
                         </div>
                     </ul>

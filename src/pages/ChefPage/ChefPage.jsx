@@ -11,19 +11,19 @@ import Team from "../../components/Team/Team";
 const ChefPage = () => {
     return (
         <div className="bg-base-200">
-            <NavBar></NavBar>
+            <NavBar htmlFor="my-drawer-2"></NavBar>
             <div className="drawer lg:drawer-open">
                 <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
                 <div className="drawer-content">
                     {/* Page content here */}
                     <Nav home='CHEF PAGE' food='Chef Page'></Nav>
                     <Team></Team>
-                    <label htmlFor="my-drawer-2" className="btn btn-primary drawer-button lg:hidden">Open drawer</label>
+                    {/* <label htmlFor="my-drawer-2" className="btn btn-primary drawer-button lg:hidden">Open drawer</label> */}
 
                 </div>
-                <div className="drawer-side bg-base-100">
+                <div className="drawer-side md:bg-base-100">
                     <label htmlFor="my-drawer-2" aria-label="close sidebar" className="drawer-overlay"></label>
-                    <ul className="menu p-4 w-[282px] min-h-full text-base-content list-none">
+                    <ul className="menu p-4 w-[282px] min-h-full text-base-content list-none bg-base-100">
                         {/* Sidebar content here */}
                         <h2 className="menu-title uppercase text-red-500">Main</h2>
                         <div className="font-semibold ml-9">
@@ -35,7 +35,7 @@ const ChefPage = () => {
                                     <GiForkKnifeSpoon size={20} /><span className="text-red-500">Chef Page</span>
 
                                 </Link></li>
-                                <div className="my-1">
+                                <div className="md:my-1">
                                     <li className="ml-10 mb-2 text-red-500">- Team</li>
                                     <li className="ml-10">- Chef Single Details</li>
                                 </div>
@@ -54,7 +54,7 @@ const ChefPage = () => {
                         </div>
                     </ul>
 
-                    <footer className="absolute bottom-0 w-full p-4 bg-base-100">
+                    <footer className="absolute bottom-0 p-4 bg-base-100 w-[282px] md:w-full">
                         <div className="flex justify-center gap-2 text-sm mb-2">
                             <BiLogoFacebook color="#3A5896" />
                             <AiOutlineTwitter color="#1E91D8" />
