@@ -7,7 +7,7 @@ import { PiChartLineDownBold, PiChartLineUpBold } from "react-icons/pi";
 const Statistic = () => {
 
     return (
-        <div className="ml-6 -mt-4">
+        <div className="md:-mt-4">
             <div className="flex justify-between">
                 <h5 className="text-sm font-semibold text-white mb-2">Statistic</h5>
             </div>

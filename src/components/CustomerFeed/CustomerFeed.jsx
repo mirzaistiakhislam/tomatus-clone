@@ -35,7 +35,7 @@ const CustomerFeed = () => {
     ]
 
     return (
-        <div className="mr-6 mt-2">
+        <div className="md:mt-2">
             <div className="flex justify-between">
                 <h5 className="text-sm font-semibold text-white mb-2">Customer Feed</h5>
                 <h5 className="text-xs font-semibold text-white mb-2">View All</h5>

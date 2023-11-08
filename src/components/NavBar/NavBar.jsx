@@ -1,14 +1,14 @@
 import user from '../../assets/user.jpg';
-
-const NavBar = () => {
+import { RxHamburgerMenu } from "react-icons/rx";
+const NavBar = ({ htmlFor }) => {
     return (
         <div className="navbar bg-base-100 mb-2">
             <div className="navbar-start">
                 <div className="md:w-2/5 flex justify-between">
                     <a className="btn btn-ghost normal-case text-xl text-red-500">Tomatus</a>
-                    <button>
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" className="inline-block w-5 h-5 stroke-current"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-                    </button>
+                    <label htmlFor={htmlFor} className="btn bg-base-100 drawer-button border-0">
+                        <RxHamburgerMenu />
+                    </label>
                 </div>
                 {/* divider  */}
                 <div className="divider divider-horizontal"></div>
